@@ -8,6 +8,8 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
+mkdir ${BUILD_DIR}/etc
+
 cat > ${BUILD_DIR}/etc/webdefault.xml <<EOF
 
 
@@ -28,6 +30,8 @@ cat > ${BUILD_DIR}/etc/webdefault.xml <<EOF
 </login-config>
 EOF
 
+
+mkdir ${ENV_DIR}/etc
 
 cat > ${ENV_DIR}/etc/webdefault.xml <<EOF
 
